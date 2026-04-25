@@ -1,42 +1,47 @@
-
----
-
 ## 🚀 How to Run
 
 ### 1. ESP32 Setup
-- Open `.ino` file in Arduino IDE
-- Install libraries:
-  - PubSubClient
-  - ArduinoJson
-- Connect ESP32 to WiFi
-- Upload code
+- Open the `.ino` file in Arduino IDE  
+- Install required libraries:
+  - PubSubClient  
+  - ArduinoJson  
+- Update WiFi credentials  
+- Upload code to ESP32  
 
 ### 2. Dashboard
-- Open `index.html` in browser
-- Ensure MQTT connection is active
-- View real-time data
+- Open `index.html` in a web browser  
+- Ensure MQTT broker connection is active  
+- View real-time temperature & vibration data  
 
 ---
 
 ## ⚠️ Limitations
-- Uses simulated sensor data
-- No real machine learning model
-- No persistent data storage
-- Dependent on WiFi connectivity
+- Uses simulated sensor data (no physical sensors)  
+- Prediction is rule-based (no machine learning yet)  
+- No persistent data storage  
+- Depends on stable WiFi connectivity  
 
 ---
 
 ## 🔮 Future Scope
-- Integrate real sensors
-- Add machine learning model (TensorFlow Lite / Python backend)
-- Store historical data (InfluxDB / CSV)
-- Add alerts (SMS / Email)
-- Improve security (private MQTT broker)
+- Integrate real sensors (temperature, vibration)  
+- Add machine learning model (TinyML / Python backend)  
+- Store historical data (CSV / InfluxDB)  
+- Implement alert system (SMS / Email)  
+- Use secure/private MQTT broker  
 
 ---
 
 ## 🎯 Goal
-To transform this system into a **fully AI-driven predictive maintenance platform** suitable for real-world industrial applications.
+Transform this system into a **fully AI-driven predictive maintenance platform** for real-world industrial applications.
+
+---
+
+## 📚 Key Learnings
+- MQTT publish-subscribe architecture  
+- ESP32-based embedded system design  
+- Real-time data visualization using web dashboards  
+- Designing rule-based predictive logic  
 
 ---
 
@@ -47,4 +52,4 @@ To transform this system into a **fully AI-driven predictive maintenance platfor
 ---
 
 ## 📌 Note
-This project is currently a hybrid of IoT and rule-based analytics and is being actively upgraded toward an AI-integrated system.
+This project currently implements a **rule-based predictive maintenance system** and serves as a foundation for future AI integration.
